@@ -12,8 +12,7 @@ fi
 i=$(( i + 1 ))
 
 set -x
-for n ({2..$(( $i ))})
-do
+for n ({2..$(( $i ))}); do
     ifconfig lo0 alias 127.0.0."$n"
 done
 set +x
