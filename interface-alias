@@ -8,7 +8,7 @@ else
     i="$1"
 fi
 
-# 172.0.0.1 already exists
+# 127.0.0.1 already exists, so start with 127.0.0.2 and add the given number of aliases
 i=$(( i + 1 ))
 
 set -x
