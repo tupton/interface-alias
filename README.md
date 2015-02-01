@@ -35,8 +35,8 @@ create a property list that `launchd` can use, reproduced here in case you don't
 </plist>
 ```
 
-Modify the name and paths as appropriate and place in `/Library/LaunchDaemons`, then load with
-`launchctl load /Library/LaunchDaemons/com.thomasupton.interface-alias.plist`.
+Modify the name, paths, and arguments as appropriate - this plist creates two aliases - and place in
+`/Library/LaunchDaemons`, then load with `launchctl load /Library/LaunchDaemons/com.thomasupton.interface-alias.plist`.
 
   [launchd]: https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/launchd.8.html
   [Lingon]: https://www.peterborgapps.com/lingon/
