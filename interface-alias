@@ -13,6 +13,6 @@ i=$(( i + 1 ))
 
 set -x
 for n ({2..$(( $i ))}); do
-    ifconfig lo0 alias 127.0.0."$n"
+    ifconfig lo0 alias 127.0.0."$n" up
 done
 set +x
